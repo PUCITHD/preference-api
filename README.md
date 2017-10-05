@@ -48,8 +48,6 @@ campvtime
 ## Built With
 
 * [PHP](http://php.net) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 
 ## License
