@@ -1,4 +1,5 @@
 <?php
+header('Access-Control-Allow-Origin: *'); 
 header('Content-Type: application/json');
 if (isset($_GET['sevcs'])&&isset($_GET['csvit'])&&isset($_GET['sevit'])&&isset($_GET['newvold'])&&isset($_GET['morvaft'])&&isset($_GET['degvcamp'])&&isset($_GET['degvtime'])&&isset($_GET['campvtime'])) {
 	//if all parameters are given.
