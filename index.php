@@ -1,4 +1,5 @@
 <?php
+header('Content-Type: application/json');
 if (isset($_GET['sevcs'])&&isset($_GET['csvit'])&&isset($_GET['sevit'])&&isset($_GET['newvold'])&&isset($_GET['morvaft'])&&isset($_GET['degvcamp'])&&isset($_GET['degvtime'])&&isset($_GET['campvtime'])) {
 	//if all parameters are given.
 
@@ -45,14 +46,7 @@ if (isset($_GET['sevcs'])&&isset($_GET['csvit'])&&isset($_GET['sevit'])&&isset($
 	echo json_encode($priorities);
 }
 else {
-
-	//api reference
-?>
-<center>
-	<h1>Welcome to PUCIT Preference API</h1>
-	<h3>API is designed for Developers</h3>
-	<p>PUCIT Preference API is build to make preference setter a multi platform Application. For more information Contact <a href="https://m.me/adilj13">Adil Aziz</a></p>
-</center>
-<?php
+	$error=['error'=>'1','msg'=>'Invalid parameters passed!'];
+	echo json_encode($error);
 }
 ?>
