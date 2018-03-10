@@ -44,7 +44,8 @@ if (isset($_GET['sevcs'])&&isset($_GET['csvit'])&&isset($_GET['sevit'])&&isset($
 	$priorities=array_values($priorities);
 
 	//return result in the form of JSON
-	echo json_encode($priorities);
+	$res2respond=["priorities"=>$priorities];
+	echo json_encode($res2respond);
 }
 else {
 	$error=['error'=>'1','msg'=>'Invalid parameters passed!'];
