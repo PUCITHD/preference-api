@@ -47,7 +47,7 @@ campvtime
 
 ## Built With
 
-* [PHP](http://php.net) - The web framework used
+* [PHP](http://php.net) - The web language used
 
 
 ## License
